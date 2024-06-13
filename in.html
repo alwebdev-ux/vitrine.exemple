@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .MLM {
+            background-color: yellow; /* Exemple de style pour la classe "MLM" */
+        }
+    </style>
+</head>
+<body>
+    <p class="contain-b">Menu de navigation</p>
+    <div class="hamburger">
+        <input class="checkbox" type="checkbox" />
+        <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+          <path
+            class="lineTop line"
+            stroke-linecap="round"
+            stroke-width="4"
+            stroke="black"
+            d="M6 11L44 11"
+          ></path>
+          <path
+            stroke-linecap="round"
+            stroke-width="4"
+            stroke="black"
+            d="M6 24H43"
+            class="lineMid line"
+          ></path>
+          <path
+            stroke-linecap="round"
+            stroke-width="4"
+            stroke="black"
+            d="M6 37H43"
+            class="lineBottom line"
+          ></path>
+        </svg>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Sélectionnez la checkbox et le menu de navigation
+        const checkbox = document.querySelector(".checkbox");
+        const navlink = document.querySelector(".contain-b");
+
+        // Ajoutez un écouteur d'événements à la checkbox
+        checkbox.addEventListener("change", () => {
+          // Vérifiez si la checkbox est cochée
+          if (checkbox.checked) {
+            // Si la checkbox est cochée, ajoutez la classe "MLM" au menu
+            navlink.classList.add("MLM");
+          } else {
+            // Si la checkbox est décochée, enlevez la classe "MLM" du menu
+            navlink.classList.remove("MLM");
+          }
+        });
+      });
+    </script>
+</body>
+</html>

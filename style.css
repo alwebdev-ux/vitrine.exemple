@@ -1,0 +1,322 @@
+html{
+    font-family:Courier New, monospace;
+}
+body{
+    color: white;
+    background-color: antiquewhite;
+    margin: 0%;
+
+}
+
+.menu {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    margin: 10px;
+  }
+  
+  .menu:focus,
+  .menu:hover {
+    color: #ffffff;
+  }
+  
+  .menu:focus:after,
+  .menu:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .menu:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+.contain-b{
+    padding: 2%;
+
+}
+  nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+    z-index: 1000;
+  }
+
+  .logo{
+    margin: 0%;
+    padding: 2%;
+    z-index: 1500;
+    font-weight:bold;
+  }
+
+  .img{
+    background-color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background-image: url(imghead.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.5;
+    position: relative
+
+  }
+
+
+  
+  header{
+    background-color: black;
+
+  }
+  .slogant{
+    font-family: inherit;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    position: absolute;
+    top: 40%; /* déplacez le haut de l'élément à 50% de la hauteur du parent */
+    left: 50%; /* déplacez la gauche de l'élément à 50% de la largeur du parent */
+    transform: translate(-50%, -50%); /* recentrez l'élément en ajustant de moitié de sa propre largeur et hauteur */
+  }
+
+  .btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    background-color: #ffc506;
+    position: absolute;
+    top: 55%; /* déplacez le haut de l'élément à 50% de la hauteur du parent */
+    left: 50%; /* déplacez la gauche de l'élément à 50% de la largeur du parent */
+    transform: translate(-50%, -50%);
+    border-radius: 10px ;
+  }
+  
+  .btn:hover {
+    color: white;
+    border-radius: 40px ;
+    border: #ffffff solid 1px;
+  }
+  .story{
+    color: black;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+  }
+  .coffe{
+
+    padding: 1%;
+    filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+    border-radius: 30px;
+    width: 30%;
+}
+
+    .storyp{
+        color: rgb(0, 0, 0);
+        font-family: inherit;
+        font-size: 35px;
+        margin: 1%;
+        padding: 1%;
+        font-family: inherit;
+        border-radius: 30px;
+        width: 70%;
+
+    }
+
+    .contain-story{
+        display: flex;
+    }  
+    .slide{
+        margin-top: 1%;
+        background-color: rgb(255, 255, 255);
+        padding: 1%;
+        color: black;
+        font-size: 50px;
+        font-family: inherit;
+    }
+
+    .equipe{
+        color: black;
+        font-family: inherit;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 50px;
+        text-transform: uppercase;
+
+    }
+  .imgE{
+    padding: 1%;
+    filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+    border-radius: 30px;
+    width: 35%;
+    display: flex;
+    margin: auto;
+
+  }
+
+  .menu5{
+    color: black;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+
+  .liste{
+    font-family: inherit;
+    color: black;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+  }
+  .boisson{
+    background-color: white;
+    margin: 1%;
+    padding: 7.5%;
+    border-radius: 20px;
+    box-shadow: black 10px 10px 10px;
+  }
+  .sucre{
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    margin: 1%;
+    padding: 7.5%;
+    border-radius: 20px;
+    box-shadow: black 10px 10px 10px;
+  }
+  .title-li{
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .li {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .Pied {
+    text-align: center;
+  }
+  footer{
+    background-color: rgb(29, 29, 29);
+    padding: 1%;
+  }
+
+  .hamburger{
+    display: none
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .hamburger {
+      height: 50px;
+      width: 50px;
+      transform: 0.2s;
+      position: fixed;
+        top: 0;
+        right: 0;
+      display: block;
+      z-index: 150;
+      
+    }
+    .hamburger .checkbox {
+      position: absolute;
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+    }
+    .line {
+      transition: 0.5s;
+      stroke-width: 6px;
+      stroke: rgb(255, 255, 255);
+    }
+    .lineTop {
+      stroke-dasharray: 40 40;
+      stroke-dashoffset: 25;
+    }
+    .lineBottom {
+      stroke-dasharray: 40 40;
+      stroke-dashoffset: 60;
+    }
+    .lineMid {
+      stroke-dasharray: 40 40;
+    }
+    .hamburger .checkbox:checked + svg .line {
+      stroke: crimson;
+    }
+    .hamburger .checkbox:checked + svg .lineTop {
+      stroke-dashoffset: 0;
+      transform-origin: left;
+      transform: rotateZ(45deg) translate(-7px, -5px);
+    }
+    .hamburger .checkbox:checked + svg .lineMid {
+      stroke-dashoffset: 40;
+    }
+    .hamburger .checkbox:checked + svg .lineBottom {
+      stroke-dashoffset: 0;
+      transform-origin: left;
+      transform: rotateZ(-45deg) translate(-5px, 5px);
+    }
+
+    
+    .contain-b{
+ 
+        width: 100%;
+        position: fixed;
+        position: center;
+        display: flex;
+        flex-direction: column;
+        transform: translate(-50%, -50%); 
+        background-color: antiquewhite;
+        transition: 0.5s;
+        margin-top: 50%;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        border-bottom: #ffffff solid 2px;
+        opacity: 0;
+
+
+
+    }
+
+    .menu{
+      margin-top: 15%;
+      color: black;
+      
+    }
+.MLM{
+  opacity: 1;
+  margin-left: 50%;
+    }
+    nav{
+      height: 7.5%;
+    }
+  }
