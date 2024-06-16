@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>| LE PETIT BRISTOT PARISIEN |</title>
   </head>
   <body>
@@ -41,7 +42,7 @@
             ></path>
           </svg>
       </div>
-        <div data-aos="fade-right" class="contain-b">
+        <div  class="contain-b">
           <button class="menu">acueil</button>
           <button class="menu">à propos</button>
           <button class="menu">menu</button>
@@ -56,7 +57,7 @@
       <h1 data-aos="zoom-in" class="story">HISTOIRE</h1>
       <div class="contain-story">
         <img data-aos="fade-down" src="coffeimg.avif" alt="" class="coffe" />
-        <p data-aos="fade-up" class="storyp">
+        <p data-aos="zoom-in" class="storyp">
           <b
             >En 2015, dans les ruelles animées de Montmartre, Juliette Martin
             ouvrit Le Petit Café. Son café chaleureux est vite devenu un lieu
@@ -97,7 +98,7 @@
 
     <div class="contain-equipe">
       <h1 data-aos="zoom-in" class="equipe">NOTRE éQUIPE</h1>
-      <img data-aos="fade-up" class="imgE" src="equipe.jpg" alt="" />
+      <img data-aos="fade-down" class="imgE" src="equipe.jpg" alt="" />
     </div>
     <div class="contain-menu">
       <h1 data-aos="zoom-in" class="menu5">MENU</h1>
@@ -171,6 +172,9 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       });
+
+  AOS.init();
+
     </script>
   </body>
 </html>
